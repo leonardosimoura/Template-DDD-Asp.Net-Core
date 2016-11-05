@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AppTemplate.Domain.Interfaces.Service
 {
-    public interface IUserService : IServiceBase<Usuario>
+    public interface IUserService : IServiceBase<Teste>
     {
     }
 }

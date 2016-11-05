@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AppTemplate.Domain.Interfaces.Repository
 {
-    public interface IUserRepository : IRepositoryBase<Usuario>
+    public interface IUserRepository : IRepositoryBase<Teste>
     {
     }
 }

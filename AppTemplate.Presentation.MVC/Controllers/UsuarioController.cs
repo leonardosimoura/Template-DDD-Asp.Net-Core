@@ -9,10 +9,10 @@ using AppTemplate.Domain.Interfaces.Service;
 
 namespace AppTemplate.Presentation.MVC.Controllers
 {
-    public class UsuarioController : Controller
+    public class TesteController : Controller
     {
         private readonly IUserService _service;
-        public UsuarioController(IUserService service)
+        public TesteController(IUserService service)
         {
             _service = service;
         }

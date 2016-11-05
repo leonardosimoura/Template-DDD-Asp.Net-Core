@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 namespace AppTemplate.Domain.Entities
 {
     [DebuggerDisplay("IdUsuario = {IdUsuario}; Nome = {Nome}; Email = {Email}")]
-    public class Usuario 
+    [Table("Teste")]
+    public class Teste 
     {
 
         [Key]

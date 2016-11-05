@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AppTemplate.Infra.Data.Repositories
 {
-    public class UserRepository : RepositoryBase<Usuario>, IUserRepository
+    public class UserRepository : RepositoryBase<Teste>, IUserRepository
     {
     }
 }

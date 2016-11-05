@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AppTemplate.AppService.Service
 {
-    public class UserService : ServiceBase<Usuario>, IUserService
+    public class UserService : ServiceBase<Teste>, IUserService
     {
         private readonly IUserRepository _repository;
         public UserService(IUserRepository repository) : base(repository)
@@ -16,7 +16,7 @@ namespace AppTemplate.AppService.Service
             _repository = repository;
         }
 
-        Usuario IServiceBase<Usuario>.Add(Usuario obj)
+        Teste IServiceBase<Teste>.Add(Teste obj)
         {
            obj.Registrar();
 
