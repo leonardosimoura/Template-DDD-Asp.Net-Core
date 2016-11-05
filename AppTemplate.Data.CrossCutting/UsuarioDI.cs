@@ -14,8 +14,8 @@ namespace AppTemplate.Infra.CrossCutting
     {
         public static void Register(IServiceCollection services)
         {
-            services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            services.AddScoped<IUsuarioService, UsuarioService>();
         }
     }
 }

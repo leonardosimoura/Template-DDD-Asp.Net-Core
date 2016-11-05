@@ -19,33 +19,33 @@ namespace AppTemplate.Infra.Data.Repositories
         {
             
         }
-        T IRepositoryBase<T>.Add(T obj)
+        public T Add(T obj)
         {
             context.Set<T>().Add(obj);
             return obj;
         }
 
-        void IRepositoryBase<T>.Dispose()
+        public void Dispose()
         {
             //throw new NotImplementedException();
         }
 
-        IQueryable<T> IRepositoryBase<T>.Query()
+        public IQueryable<T> Query()
         {
             return context.Set<T>().AsQueryable();
         }
 
-        T IRepositoryBase<T>.GetById(object id)
+        public T GetById(object id)
         {
             return context.Set<T>().Find(id);
         }
 
-        void IRepositoryBase<T>.Remove(T obj)
+        public void Remove(T obj)
         {
             context.Set<T>().Remove(obj);
         }
 
-        void IRepositoryBase<T>.Update(T obj)
+        public void Update(T obj)
         {
             context.Set<T>().Update(obj);
         }

@@ -37,7 +37,7 @@ namespace AppTemplate.Infra.Data.Contexts
 
         #region DbSet
                 
-        public virtual DbSet<Teste> Teste { get; set; }
+        public virtual DbSet<Usuario> Teste { get; set; }
 
         #endregion
     }

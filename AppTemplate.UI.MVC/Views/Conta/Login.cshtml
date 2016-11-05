@@ -1,0 +1,29 @@
+﻿@model AppTemplate.UI.MVC.Model.ContaViewModels.LoginViewModel
+
+
+
+@using (Html.BeginForm("Login","Conta"))
+{
+    <div class="row">
+        <div class="col-md-12">
+            @Html.LabelFor(m => m.Email)
+
+            @Html.EditorFor(m => m.Email)
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            @Html.LabelFor(m => m.Senha)
+
+            @Html.PasswordFor(m => m.Senha)
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+           <button type="submit">Login</button>
+        </div>
+    </div>
+
+}
