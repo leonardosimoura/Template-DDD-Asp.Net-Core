@@ -1,9 +1,14 @@
 # Template-DDD-Asp.Net-Core
 
 
-##DDL 
-###SQL
-CREATE TABLE [dbo].[Usuario](
+##DDL
+
+###SQL Server
+
+```SQL
+
+CREATE TABLE [dbo].[Usuario]
+(
 	[IdUsuario] [int] IDENTITY(1,1) NOT NULL,
 	[Nome] [varchar](200) NOT NULL,
 	[Email] [varchar](200) NOT NULL,
@@ -15,8 +20,11 @@ CREATE TABLE [dbo].[Usuario](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 
+```SQL
+
 ###Postgres
 
+```SQL
 CREATE TABLE "Usuario"
 (
   "IdUsuario" serial NOT NULL,
@@ -25,3 +33,5 @@ CREATE TABLE "Usuario"
   "Senha" character varying(200) NOT NULL,
   "DataRegistro" timestamp without time zone NOT NULL
 );
+
+```SQL
