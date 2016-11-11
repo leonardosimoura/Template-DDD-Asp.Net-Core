@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace AppTemplate.Domain.Entities
 {
     [DebuggerDisplay("IdUsuario = {IdUsuario}; Nome = {Nome}; Email = {Email}")]
-    [Table("Teste")]
+    [Table("Usuario")]
     public class Usuario 
     {
 

@@ -14,6 +14,7 @@ namespace AppTemplate.Infra.Data.Contexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=LEONARDONOTE\SQL2016;Database=EntityCore;Trusted_Connection=True;");
+            //optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Username=postgres;Password=#####;Database=Entity");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

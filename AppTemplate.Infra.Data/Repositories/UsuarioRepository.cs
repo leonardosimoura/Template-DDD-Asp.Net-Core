@@ -13,7 +13,7 @@ namespace AppTemplate.Infra.Data.Repositories
         public override IQueryable<Usuario> Query()
         {
             var list = new List<Usuario>() { new Usuario { Nome = "Leonardo", Email = "leonardosimoura@gmail.com" , Senha = "123456" , IdUsuario = 1 ,DataRegistro=DateTime.Now } };
-            //return base.Query();
+            return base.Query();
             return list.AsQueryable();
         }
 
