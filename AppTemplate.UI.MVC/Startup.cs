@@ -59,7 +59,11 @@ namespace AppTemplate.UI.MVC
 
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
-                AutomaticAuthenticate = true
+                AutomaticAuthenticate = true,
+                ExpireTimeSpan = TimeSpan.FromHours(2),
+                CookieDomain = "apptemplate.com",
+                CookieName = "C1"
+                
             });
 
             //app.Run(async context =>
