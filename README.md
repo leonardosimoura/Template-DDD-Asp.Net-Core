@@ -1,8 +1,7 @@
 # Template-DDD-Asp.Net-Core
 
 
-##DDL for teste
-
+##DDL 
 ###SQL
 CREATE TABLE [dbo].[Usuario](
 	[IdUsuario] [int] IDENTITY(1,1) NOT NULL,
